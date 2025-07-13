@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-
+const malla = {
+  nodes: [
+    { id: "Introducción a la Contabilidad", year: 1, semester: 1 },
+    { id: "Introducción a la Matemática", year: 1, semester: 1 },
+    { id: "Derecho Privado", year: 1, semester: 1 },
+    { id: "Introducción a las Ciencias Sociales", year: 1, semester: 2 },
+    { id: "Introducción a la Economía", year: 1, semester: 2 },
+    { id: "Introducción a la Administración", year: 1, semester: 2 },
+    { id: "Derecho Constitucional y Administrativo", year: 1, semester: 2 },
+    { id: "Contabilidad 1", year: 2, semester: 1 },
+    { id: "Matemáticas para contadores y administradores", year: 2, semester: 1 },
+    { id: "Sistemas y procedimientos administrativos", year: 2, semester: 1 },
+    { id: "Derecho Comercial", year: 2, semester: 1 },
+    { id: "Contabilidad 2", year: 2, semester: 2 },
+    { id: "Microeconomía", year: 2, semester: 2 },
+    { id: "Macroeconomía", year: 2, semester: 2 },
+    { id: "Métodos Estadísticos", year: 2, semester: 2 },
+  ],
+  links: [
+    { source: "Introducción a la Contabilidad", target: "Contabilidad 1" },
+    { source: "Introducción a la Matemática", target: "Matemáticas para contadores y administradores" },
+    { source: "Introducción a la Administración", target: "Sistemas y procedimientos administrativos" },
+    { source: "Derecho Privado", target: "Derecho Comercial" },
+    { source: "Contabilidad 1", target: "Contabilidad 2" },
+    { source: "Introducción a las Ciencias Sociales", target: "Microeconomía" },
+    { source: "Introducción a la Economía", target: "Microeconomía" },
+    { source: "Introducción a las Ciencias Sociales", target: "Macroeconomía" },
+    { source: "Introducción a la Economía", target: "Macroeconomía" },
+    { source: "Matemáticas para contadores y administradores", target: "Métodos Estadísticos" },
+  ],
+};
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
